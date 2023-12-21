@@ -2,16 +2,21 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <script src="functions.js"> </script>
     <title>Массивы</title>
 </head>
 <body>
                 <label for="height" id="lab">Рост</label>
-                <input type="number" id="rost" placeholder="ваш рост">
+                <input type="number" id="rost" placeholder="ваш рост в метрах">
                 <label for="weight" id="lab2">Вес</label>
                 <input type="number" id="ves" placeholder="ваш вес">
                 <input type="button"
                        value="посчитать"
                        onclick="console.log(ves.value / (rost.value * rost.value))"
                        >
+                       <input type="button" value="Добавить"
+                       onclick="tbl.appendChild(add_to_cart('помидорки', 6))">
+<table border="1" id="tbl">
+</table>
 </body>
 </html>
